@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Mysuru:wght@300;400;500;600;700&display=swap');
+
+/* font-family: "Hind Mysuru", serif; */
+
+/* English */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
+/* font-family: "Noto Kufi Arabic", serif; */
+
+/* Arabic */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: white;
+  --black: black;
+  --c4158D0: #4158D0;
+  --cC850C0: #C850C0;
+  --cFFCC70: #FFCC70;
+  --c8EC5FC: #8EC5FC;
+  --cE0C3FC: #E0C3FC;
+  --c0652DD: #0652DD;
+  --tW: rgba(255, 255, 255, 0.5);
+  --tB: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  direction: rtl;
+}
+
+div.co-header-main {
+  overflow: hidden;
+  position: relative;
+}
+
+div.background {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div.background div.g-1 {
+  width: 800px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  left: -350px;
+  animation: g-1 1s forwards ease;
+  filter: blur(100px);
+  transform: rotate(45deg);
+  background-repeat: no-repeat;
+  background-color: var(--c4158D0, #4158D0);
+  background-image: linear-gradient(43deg, var(--c4158D0, #4158D0) 0%, var(--cC850C0, #C850C0) 46%, var(--cFFCC70, #FFCC70) 100%);
+}
+
+div.background div.g-2 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: g-2 1s forwards ease;
+  transform: translate(50%, -50%);
+  filter: blur(100px);
+  opacity: 0;
+  background-repeat: no-repeat;
+  background-color: var(--c8EC5FC, #8EC5FC);
+  background-image: linear-gradient(62deg, var(--c8EC5FC, #8EC5FC) 0%, var(--cE0C3FC, #E0C3FC) 100%);
+}
+
+@keyframes g-1 {
+  from {
+    transform: translate(-500px, -500px) rotate(45deg);
+  }
+
+  to {
+    transform: translate(0px, 0px) rotate(45deg);
+  }
+}
+
+@keyframes g-2 {
+  from {
+    opacity: 0;
+    transform: rotate(45deg) translate(50%, -50%);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(0deg) translate(50%, -50%);
+  }
+}
+
+header {
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav {
+  
+}
+
+header nav ul {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--black, black);
+}
+
+main {
+  height: 800px;
+}
