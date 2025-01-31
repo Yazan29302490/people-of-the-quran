@@ -378,9 +378,9 @@ header div.box-logo img {
     display: block;
   }
 
-  header nav {
+  /* header nav {
     display: none;
-  }
+  } */
 
   header div.box-logo {
     justify-content: flex-end;

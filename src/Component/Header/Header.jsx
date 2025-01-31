@@ -38,6 +38,7 @@ function Header() {
     const menuClose = () => {
       if (closeMenu) {
         boxMenu.classList.remove("active");
+        moveIt();
       };
     };
 
@@ -51,7 +52,7 @@ function Header() {
 
     const moveIt = () => {
       if (Robot) {
-        Robot.style.opacity = boxMenu.classList.contains("active") ? "0" : "1";
+        Robot.style.setProperty("opacity", boxMenu.classList.contains("active") ? "0" : "1", "important");
       };
     };
 
@@ -80,37 +81,37 @@ function Header() {
   }, []);
 
   return (
-    <header>
-      <div className="co-menu-dark">
+    <header className="!z-50">
+      <div className="co-menu-dark flex items-center justify-between">
         <button className="btn-menu"><i className="fa-solid fa-bars"></i></button>
         <div className="box-menu">
-          <nav>
-            <button className="close-menu"><i className="fa-solid fa-xmark"></i></button>
-            <ul>
-              <li>
-                <a href="https://www.google.com/" className="active">
-                  الرئيسية
-                </a>
-              </li>
-              <li>
-                <a href="https://www.google.com/">القران</a>
-              </li>
-              <li>
-                <a href="https://www.google.com/">احاديث</a>
-              </li>
-              <li>
-                <a href="https://www.google.com/">قصص الانبياء</a>
-              </li>
-              <li>
-                <a href="https://www.google.com/">فيديوهات اسلامية</a>
-              </li>
-              <li>
-                <a href="https://www.google.com/" className="subscription">اشتراك</a>
-              </li>
-              <li>
-                <a href="https://www.google.com/" className="Login"></a>
-              </li>
-            </ul>
+          <nav className="h-full">
+            <button className="close-menu rounded-full bg-gray-200 cursor-pointer !py-2 !px-4"><i className="fa-solid fa-xmark"></i></button>
+              <ul className="!mt-8 flex flex-col justify-between">
+                <li className="w-full border-t border-b border-gray-200">
+                  <a href="#" className="w-full !pr-4 !text-xl text-blue-800 !py-4 !h-auto block">
+                    الرئيسية
+                  </a>
+                </li>
+                <li className="w-full border-t border-b border-gray-200">
+                  <a href="#" className="w-full !pr-4 !text-xl text-blue-800 !py-4 !h-auto block">القرآن</a>
+                </li>
+                <li className="w-full border-t border-b border-gray-200">
+                  <a href="#" className="w-full !pr-4 !text-xl text-blue-800 !py-4 !h-auto block">قصص الانبياء</a>
+                </li>
+                <li className="w-full border-t border-b border-gray-200">
+                  <a href="#" className="w-full !pr-4 !text-xl text-blue-800 !py-4 !h-auto block">فيديوهات اسلامية</a>
+                </li>
+                <li className="w-full border-t border-b border-gray-200">
+                  <a href="#" className="subscription w-full !pr-4 !text-xl text-blue-800 !py-4 !h-auto block">اشتراك</a>
+                </li>
+                <li className="w-full border-t border-b border-gray-200">
+                  <a href="#" className="subscription w-full !pr-4 !text-xl text-blue-800 !py-4 !h-auto block">اشتراك</a>
+                </li>
+                <li className="w-full border-t border-b border-gray-200">
+                  <a href="#" className="Login w-full !pr-4 !text-xl text-blue-800 !py-4 !h-auto block">تسجيل الدخول</a>
+                </li>
+              </ul>
           </nav>
         </div>
         <input type="checkbox" name="checkbox" id="checkbox" />
@@ -118,30 +119,30 @@ function Header() {
           {" "}
         </label>
       </div>
-      <nav>
+      <nav className="lg:block hidden">
         <ul>
           <li>
-            <a href="https://www.google.com/" className="active">
+            <a href="#" className="active">
               الرئيسية
             </a>
           </li>
           <li>
-            <a href="https://www.google.com/">القران</a>
+            <a href="#">القران</a>
           </li>
           <li>
-            <a href="https://www.google.com/">احاديث</a>
+            <a href="#">احاديث</a>
           </li>
           <li>
-            <a href="https://www.google.com/">قصص الانبياء</a>
+            <a href="#">قصص الانبياء</a>
           </li>
           <li>
-            <a href="https://www.google.com/">فيديوهات اسلامية</a>
+            <a href="#">فيديوهات اسلامية</a>
           </li>
           <li>
-            <a href="https://www.google.com/" className="subscription">اشتراك</a>
+            <a href="#" className="subscription">اشتراك</a>
           </li>
           <li>
-            <a href="https://www.google.com/" className="Login"></a>
+            <a href="#" className="Login"></a>
           </li>
         </ul>
       </nav>
