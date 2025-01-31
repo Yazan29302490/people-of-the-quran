@@ -1,4 +1,24 @@
+import { useEffect } from "react";
+
 function Miscellaneous() {
+  useEffect(() => {
+    let videos = document.querySelectorAll("box-videos iframe");
+    
+    const sec1Ain = () => {
+      videos.forEach(element => {
+        if (window.scrollY > 1000) {
+          element.style.animation = `sec-1Ani 1 forwards ease`;
+        }
+      });
+    };
+
+    window.addEventListener("DOMContentLoaded", sec1Ain);
+
+    return () => {
+      window.removeEventListener("DOMContentLoaded", sec1Ain);
+    }
+  })
+
   return (
     <section className="sec-1">
       <div className="box-title">

@@ -25,7 +25,7 @@ function Robot() {
         element.style.display = "none";
         if (window.scrollY >= 0 && window.scrollY <= 600 && index == 0) {
           element.style.display = "block";
-        } else if (window.scrollY > 600 && window.scrollY <= 1200 && index == 7) {
+        } else if (window.scrollY > 600 && window.scrollY <= 2000 && index == 9) {
           element.style.display = "block";
         }
       });
@@ -80,12 +80,14 @@ function Robot() {
       <div className="box-Robot">
         <div className="box-robot-talk">
           <p dir="rtl">مرحبا يا {userName || "زائر"} انا مرشدك ومساعدك في هذا الموقع ان شاء الله</p>
-          <p className="directing" dir="rtl">هذا الزر يأخدك الى الصفحة الرئيسية</p>
-          <p className="directing" dir="rtl">هذا الزر يأخذك الى صفحة قراءة القران</p>
-          <p className="directing" dir="rtl">هذا الزر يأخذك الى صفحة الاحاديث الشريفة</p>
-          <p className="directing" dir="rtl">هذا الزر يأخذك الى صفحة قصص الانبياء</p>
-          <p className="directing" dir="rtl">هذا الزر يأخذك الى صفحة فيديوهات اسلامية</p>
-          <p className="directing" dir="rtl">هذا الزر يأخذك الى صفحة قراءة القران</p>
+          <p dir="rtl">هذا الزر يأخدك الى الصفحة الرئيسية</p>
+          <p dir="rtl">هذا الزر يأخذك الى صفحة قراءة القران</p>
+          <p dir="rtl">هذا الزر يأخذك الى صفحة الاحاديث الشريفة</p>
+          <p dir="rtl">هذا الزر يأخذك الى صفحة قصص الانبياء</p>
+          <p dir="rtl">هذا الزر يأخذك الى صفحة فيديوهات اسلامية</p>
+          <p dir="rtl">هذا زر الاشتراك في موقع اهل القران, تنبية اذا ليس لديك حساب في الموقع قم بالدخول الية</p>
+          <p dir="rtl">هذا زر التسجيل الدخول للدخول الى حسابك</p>
+          <p dir="rtl">هذا الزر يأخذك الى صفحة قراءة القران</p>
           <p>هذا جزء المنوعة وهنا فيديوهات متنوعة دينية اذا لا تريدها استمر بالنزول</p>
           <div className="box-name">
             <input type="text" placeholder="من فضلك اكتب اسمك" />

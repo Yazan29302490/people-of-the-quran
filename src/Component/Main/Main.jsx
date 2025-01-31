@@ -7,7 +7,7 @@ function Main() {
   };
 
   return (
-    <main className="border border-white">
+    <main>
       <div className="background">
           <div className="glow g-1"></div>
           <div className="glow g-2"></div>
