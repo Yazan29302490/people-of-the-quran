@@ -813,6 +813,18 @@ section.sec-1 div.box-videos {
   gap: 20px;
 }
 
+@media (max-width: 1500px) {
+  section.sec-1 div.box-videos {
+    grid-template-columns: repeat(2, 500px);
+  }
+}
+
+@media (max-width: 1000px) {
+  section.sec-1 div.box-videos {
+    grid-template-columns: repeat(1, 500px);
+  }
+}
+
 section.sec-1 div.box-videos iframe {
   width: 500px;
   border-radius: 10px;
@@ -824,6 +836,20 @@ section.sec-1 div.box-videos iframe:nth-child(1) {
   height: 100%;
   grid-column: 1/3;
   grid-row: 1/3;
+}
+
+@media (max-width: 1500px) {
+  section.sec-1 div.box-videos iframe:nth-child(1) {
+    height: 500px;
+  }
+}
+
+@media (max-width: 1000px) {
+  section.sec-1 div.box-videos iframe:nth-child(1) {
+    grid-column: 2/1;
+    grid-row: 2/1;
+    height: 300px;
+  }
 }
 
 ::-webkit-scrollbar {

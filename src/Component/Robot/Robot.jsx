@@ -76,7 +76,7 @@ function Robot() {
   }, []);
 
   return (
-    <div className="Robot">
+    <div className="Robot z-10">
       <div className="box-Robot">
         <div className="box-robot-talk">
           <p dir="rtl">مرحبا يا {userName || "زائر"} انا مرشدك ومساعدك في هذا الموقع ان شاء الله</p>

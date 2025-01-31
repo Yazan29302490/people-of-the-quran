@@ -25,16 +25,11 @@ function App() {
   return (
     <div className="App">
       <div className="co-header-main">
-        <div className="background">
-          <div className="glow g-1"></div>
-          <div className="glow g-2"></div>
-          <div className="glow g-3"></div>
-        </div>
-        <Header></Header>
-        <Main></Main>
-        <Robot></Robot>
-        <Miscellaneous></Miscellaneous>
+        <Header />
+        <Main />
+        <Robot />
       </div>
+      <Miscellaneous />
     </div>
   );
 }

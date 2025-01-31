@@ -1,5 +1,3 @@
-
-
 function Miscellaneous() {
   return (
     <section className="sec-1">
